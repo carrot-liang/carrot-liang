@@ -28,9 +28,10 @@ export default defineThemeConfig({
   // createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
+  //<img src="/img/ga-logo.png" style="width:16px;display:inline-block;vertical-align:text-top"><a style="text-decoration-line:none" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010102000001" target="_blank">&nbsp;京公网安备 11010102000001号 </a>
   footer: {
-    //message: '<img src="/img/ga-logo.png" style="width:16px;display:inline-block;vertical-align:text-top"><a style="text-decoration-line:none" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010102000001" target="_blank">&nbsp;京公网安备 11010102000001号 </a><a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration-line:none;margin-left: 20px;">京ICP备05070602号&nbsp;&nbsp;&nbsp;</a>',
-    //copyright: '',
+    message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration-line:none;margin-left: 20px;">京ICP备2025119193号</a>',
+    copyright: '',
   },
 
   /**

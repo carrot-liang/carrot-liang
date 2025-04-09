@@ -1,7 +1,7 @@
 ---
 title: start1
 createTime: 2025/03/31 16:21:30
-permalink: /fasset/garuigsq/
+permalink: /fasset/
 ---
 
 ## 标题H2
