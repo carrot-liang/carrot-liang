@@ -1,15 +1,12 @@
 ---
-title: Support
+title: 联系我们 / Contact Us
 createTime: 2025/03/31 16:21:30
 permalink: /support/
 ---
 
-## 联系我们 / Contact Us
-
 我们欢迎您通过以下方式与我们联系：
 
 工作时间 / Working Hours: 周一至周五 9:00 - 18:00 (北京时间)
-
 
 ### 电子邮件 / Email
 
@@ -25,5 +22,3 @@ feedback@growcarrot.tech
 - [微信公众号 / WeChat Official Account](#)
 - [微博 / Weibo](#)
 - [LinkedIn](#)
-
-如果您有任何问题或需要帮助，欢迎随时联系我们！
