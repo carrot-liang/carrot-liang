@@ -1,5 +1,7 @@
 # carrot-front
 
+[![CI](https://github.com/growcarrot/growcarrot-web/actions/workflows/deploy.yml/badge.svg)](https://github.com/growcarrot/growcarrot-web/actions/workflows/deploy.yml)
+
 网站使用 [vuepress](https://vuepress.vuejs.org/) 和 [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建生成。
 
 ## Install
