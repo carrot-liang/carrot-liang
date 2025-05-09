@@ -40,7 +40,7 @@ export default defineThemeConfig({
     avatar: 'https://avatars.githubusercontent.com/u/6178399?v=4',
     name: 'carrot liang',
     description: '',
-    // circle: true,
+    circle: true,
     // location: '',
     // organization: '',
   },
