@@ -37,11 +37,11 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://avatars.githubusercontent.com/u/6178399?v=4',
-    name: 'carrot liang',
+    avatar: '/img/carrotliang.png',
+    name: 'CARROT LIANG',
     description: '',
     circle: true,
-    // location: '',
+    location: 'Beijing',
     // organization: '',
   },
 
