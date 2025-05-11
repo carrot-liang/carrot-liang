@@ -28,7 +28,14 @@ $ git config -e [--global]
 
 # 设置提交代码时的用户信息
 $ git config [--global] user.name "[name]"
-$ git config [--global] user.email "[email address]"
+$ git config [--global] user.email "[email]"
+
+# 设置拉取时默认使用使用rebase处理代码
+$ git config [--global] pull.rebase true
+
+# 设置拉取时默认使用使用merge处理代码
+$ git config [--global] pull.rebase false
+
 ```
 
 ## 增加 / 删除文件
