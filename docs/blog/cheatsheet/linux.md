@@ -3,8 +3,6 @@ title: Linux 命令速查
 createTime: 2025/08/01
 ---
 
-# Linux 常用命令速查表
-
 ## 📁 文件与目录操作
 
 ### 基础文件操作
@@ -92,6 +90,38 @@ kill -9 PID          # 强制终止进程
 
 # 后台任务
 nohup command &      # 后台运行命令
+
+
+### 压缩和解压
+```bash
+# 压缩
+tar -czf archive.tar.gz directory  # 创建gzip压缩包
+
+# 解压
+tar -xzf archive.tar.gz            # 解压gzip压缩包
+```
+
+
+### 别名和函数
+```bash
+# 创建别名
+alias ll='ls -la'          # 创建ll别名
+alias grep='grep --color=auto'  # 为grep添加颜色
+
+# 查看别名
+alias                      # 列出所有别名
+```
+
+### 系统重启
+
+```bash
+# 重启系统
+sudo reboot
+
+# 或者使用 shutdown 命令
+sudo shutdown -r now
+```
+
 ```
 
 ### 服务管理
@@ -165,37 +195,4 @@ apt install package  # 安装软件包
 apt remove package   # 删除软件包
 apt search keyword   # 搜索软件包
 apt list --installed # 列出已安装的软件包
-```
-
-
-## 🛠️ 实用工具
-
-### 压缩和解压
-```bash
-# 压缩
-tar -czf archive.tar.gz directory  # 创建gzip压缩包
-
-# 解压
-tar -xzf archive.tar.gz            # 解压gzip压缩包
-```
-
-
-### 别名和函数
-```bash
-# 创建别名
-alias ll='ls -la'          # 创建ll别名
-alias grep='grep --color=auto'  # 为grep添加颜色
-
-# 查看别名
-alias                      # 列出所有别名
-```
-
-### 系统重启
-
-```bash
-# 重启系统
-sudo reboot
-
-# 或者使用 shutdown 命令
-sudo shutdown -r now
 ```
