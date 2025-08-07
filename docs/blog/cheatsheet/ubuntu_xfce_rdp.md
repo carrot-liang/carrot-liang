@@ -1,3 +1,8 @@
+---
+title: Ubuntu 开启远程桌面（xfce）
+createTime: 2025/08/07
+---
+
 # 在 Linux VM 上安装桌面环境
 
 大多数 Linux VM 默认情况下未安装桌面环境。Linux VM 通常使用 SSH 连接而不是桌面环境进行管理，但有多个桌面环境可供你选择安装。根据所选的桌面环境，最多会占用 2 GB 的磁盘空间，并最长需要十分钟来安装和配置所有所需的包。
@@ -139,6 +144,16 @@ tail -f /var/log/syslog
 2. 在"Utilities"选项中，将"Terminal Emulator"改为"Xfce Terminal"
 
 3. 然后重启远程桌面链接，再进入即可正常打开终端
+
+### 远程桌面中无法打开浏览器
+
+1. 使用终端安装浏览器
+
+```bash
+    sudo apt install firefox
+```
+
+2. 点击左上角"Application - Settings - Default Applications"，设置默认浏览器
 
 ## 参考资料
 

@@ -195,6 +195,9 @@ apt install package  # 安装软件包
 apt remove package   # 删除软件包
 apt search keyword   # 搜索软件包
 apt list --installed # 列出已安装的软件包
+
+apt-mark showmanual # 查看手动安装的软件包（非依赖）
+
 ```
 ## 🔑 密钥
 
