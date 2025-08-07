@@ -1,0 +1,31 @@
+---
+title: 免费好用的服务
+createTime: 2025/08/07
+---
+
+### Oracle Cloud Free Tier
+
+免费在 Oracle Cloud 上构建、测试和部署应用。获取 Always Free 服务以及价值 300 美元的云储值（30 天内有效）。
+
+[点击注册](https://signup.cloud.oracle.com)
+
+
+#### 有用的链接
+
+- https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm
+- https://www.oracle.com/cn/cloud/free/faq/
+
+
+###  ClawCloud Run
+
+可免费部署docker容器，每个月送5美元额度，无需绑定信用卡。
+
+First-Time Benefit: $5 Credit
+- For Github users, eligibility requires registration at least 7 days ago.
+- For Gmail users, no other requirements.
+
+Recurring Monthly Benefit: $5 Credit
+- Unlock by binding your Github account (Your GitHub account needs to be registered for 180+ days).
+
+
+[点击注册](https://console.run.claw.cloud/signin?link=CCZJ13D2ERFL)
