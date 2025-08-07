@@ -122,9 +122,9 @@ sudo reboot
 sudo shutdown -r now
 ```
 
-```
 
 ### 服务管理
+
 ```bash
 # systemd服务管理
 systemctl start service_name    # 启动服务
