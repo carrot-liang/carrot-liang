@@ -29,3 +29,11 @@ Recurring Monthly Benefit: $5 Credit
 
 
 [点击注册](https://console.run.claw.cloud/signin?link=CCZJ13D2ERFL)
+
+
+###  SQLPub
+
+QLPub 提供最新版本、甚至是开发者版本的 MySQL 服务器测试服务。您将获得最大36000次/小时的请求、同时30个连接和500M存储空间；
+
+[点击注册](https://sqlpub.com/user/signup)
+
