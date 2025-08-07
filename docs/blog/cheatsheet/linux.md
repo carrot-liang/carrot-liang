@@ -196,3 +196,8 @@ apt remove package   # 删除软件包
 apt search keyword   # 搜索软件包
 apt list --installed # 列出已安装的软件包
 ```
+## 🔑 密钥
+
+```bash
+ssh-keygen  -lf id_rsa.pub # 生成ssh公钥的SHA256指纹
+```
