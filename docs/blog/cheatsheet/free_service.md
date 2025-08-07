@@ -20,12 +20,12 @@ createTime: 2025/08/07
 
 可免费部署docker容器，每个月送5美元额度，无需绑定信用卡。
 
-First-Time Benefit: $5 Credit
-- For Github users, eligibility requires registration at least 7 days ago.
-- For Gmail users, no other requirements.
+注册奖励: $5 
+- 使用注册超过7天的Github账户注册
+- 使用任意Gmail账户注册
 
-Recurring Monthly Benefit: $5 Credit
-- Unlock by binding your Github account (Your GitHub account needs to be registered for 180+ days).
+月度奖励: $5 
+- 绑定注册超过180的Github账户
 
 
 [点击注册](https://console.run.claw.cloud/signin?link=CCZJ13D2ERFL)
