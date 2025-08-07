@@ -1,11 +1,9 @@
 ---
-title: Ubuntu 开启远程桌面（xfce）
+title: Ubuntu 安装桌面环境（xfce）并开启远程连接（xrdp）
 createTime: 2025/08/07
 ---
 
 # 在 Linux VM 上安装桌面环境
-
-大多数 Linux VM 默认情况下未安装桌面环境。Linux VM 通常使用 SSH 连接而不是桌面环境进行管理，但有多个桌面环境可供你选择安装。根据所选的桌面环境，最多会占用 2 GB 的磁盘空间，并最长需要十分钟来安装和配置所有所需的包。
 
 
 ## 一、连接SSH
@@ -22,13 +20,12 @@ ssh root@x.x.x.x
 
 ```bash
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install xfce4
-sudo apt install xfce4-session
+sudo apt install xfce4 xfce4-goodies
 ```
 
 ## 三、安装 xrdp
 
-首先，确保你的 Ubuntu 服务器已经连接到互联网，并且具有管理员权限。然后，打开终端，输入以下命令安装 xrdp：
+使用 apt 安装 xrdp：
 
 ```bash
 sudo apt update
@@ -41,16 +38,7 @@ sudo apt install xrdp
 
 xrdp 的配置文件位于 `/etc/xrdp/xrdp.ini`。
 
-在大多数情况下，你不需要修改这个文件。但是，如果你需要自定义一些设置，比如更改端口号、启用或禁用某些功能等，可以编辑这个文件。
-
-在编辑之前，建议先备份原始文件。
-
-```bash
-sudo cp /etc/xrdp/xrdp.ini /etc/xrdp/xrdp.ini.bak
-sudo vim /etc/xrdp/xrdp.ini
-```
-
-xrdp 使用的默认会话管理器 sesman 的配置文件位于 `/etc/xrdp/sesman.ini` 。在大多数情况下，你不需要修改这个文件。
+xrdp 使用的默认会话管理器 sesman 的配置文件位于 `/etc/xrdp/sesman.ini` 
 
 修改配置 XRDP 服务器的脚本文件：
 
@@ -77,7 +65,7 @@ sudo systemctl start xrdp
 sudo systemctl enable xrdp
 ```
 
-修改配置文件后，重启服务使用如下命令
+修改配置文件后，重启服务可使用如下命令：
 
 ```bash
 sudo systemctl restart xrdp
@@ -161,5 +149,3 @@ tail -f /var/log/syslog
 - https://developer.baidu.com/article/details/3281932
 - https://cloud.baidu.com/article/3281923
 - https://blog.csdn.net/2301_76459044/article/details/147031270
-- https://www.xfce.org
-- https://www.xrdp.org

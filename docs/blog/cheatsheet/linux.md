@@ -204,3 +204,14 @@ apt-mark showmanual # 查看手动安装的软件包（非依赖）
 ```bash
 ssh-keygen  -lf id_rsa.pub # 生成ssh公钥的SHA256指纹
 ```
+
+ssh-add 向认证代理 ssh-agent(1) 添加私钥身份。当不带参数运行时，它将添加文件 ~/.ssh/id_rsa、~/.ssh/id_dsa、~/ssh/id_ecdsa、~/.ssh/id_ecdsa_sk、~/.ssh/id_ed25519 和 ~/.ssh/id_ed25519_sk。加载私钥后
+ ，ssh-add 将尝试加载相应的证书，通过向私钥文件的名称追加 -cert.pub 来获得的相应的证书。可选的文件名可以在命令行中给出。
+
+```bash
+ssh-add ~/.ssh/id_rsa
+Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
+
+ssh-add -l # 列出 ssh-agent 中当前所代表的所有身份的指纹。
+ssh-add -d ~/.ssh/id_rsa.pub  # 从 ssh-agent 中删除密钥。
+```
