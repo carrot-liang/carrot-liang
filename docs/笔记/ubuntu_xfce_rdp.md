@@ -17,7 +17,13 @@ ssh root@x.x.x.x
 
 ## 二、安装 xfce
 
-使用 apt 安装 xfce：
+先确认是否已有桌面环境
+
+```bash
+ls /usr/share/xsessions
+```
+
+若无法找到，可使用 apt 安装 xfce：
 
 ```bash
 sudo apt-get update
