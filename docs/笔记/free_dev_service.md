@@ -1,6 +1,7 @@
 ---
 title: 免费且好用的开发者服务
 createTime: 2025/08/08
+permalink: /article/w12eu3zb/
 ---
 
 ### Oracle Cloud Free Tier
