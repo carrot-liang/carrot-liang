@@ -48,7 +48,7 @@ sudo vim /etc/xrdp/startwm.sh
 
 注释原有 test 行和 exec 行，增加 startxfce4
 
-<img src="./img/ubuntu_xfce_rdp_1.png">
+<img src="ubuntu_xfce_rdp/1.png">
 
 
 ## 五、启动 xrdp 服务
@@ -121,7 +121,7 @@ tail -f /var/log/syslog
 1. 在远程终端中设置xrdp.ini，将 max_bpp=32 改为 max_bpp=16
 
 2. 在rdp客户端中手动设置降低的分辨率，设置颜色质量
-<img src="./img/ubuntu_xfce_rdp_2.png">
+<img src="ubuntu_xfce_rdp/2.png">
 
 
 如果仍遇到黑屏问题，可能是因为本地会话没有注销。在 Ubuntu 上注销当前用户，然后重新连接即可解决。
@@ -129,7 +129,7 @@ tail -f /var/log/syslog
 ### 远程桌面中终端无法打开
  
 1. 点击左上角"Application - Settings - Default Applications"
-<img src="./img/ubuntu_xfce_rdp_3.png">
+<img src="ubuntu_xfce_rdp/3.png">
 
 2. 在"Utilities"选项中，将"Terminal Emulator"改为"Xfce Terminal"
 

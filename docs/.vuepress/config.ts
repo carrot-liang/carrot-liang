@@ -37,7 +37,7 @@ export default defineUserConfig({
      */
     // blog: false, // 禁用博客
     blog: {
-      include: ['blog/**/*.md'],
+      include: ['**/*.md'],
       postList: true, // 是否启用文章列表页
       tags: true, // 是否启用标签页
       archives: true, // 是否启用归档页
