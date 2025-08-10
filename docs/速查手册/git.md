@@ -1,7 +1,6 @@
 ---
 title: Git 命令速查
 createTime: 2025/08/01
-permalink: /article/iggr7fle/
 ---
 
 ## 新建代码库

@@ -1,7 +1,6 @@
 ---
 title: Linux 命令速查
 createTime: 2025/08/01
-permalink: /article/2d7nmixg/
 ---
 
 ## 📁 文件与目录操作
