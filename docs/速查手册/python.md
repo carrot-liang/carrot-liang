@@ -2,20 +2,43 @@
 title: Python 速查手册
 ---
 
-## 安装
+## 配置
+
+### 仓库指向
 
 ```bash
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 pip config set install.trusted-host pypi.tuna.tsinghua.edu.cn
 ```
 
+### 依赖
 
 ```bash
-pip list --format=freeze > requirements.txt #用本地依赖生成requirements
+pip3 install pipreqs
+
+pipreqs .  #项目依赖生成requirements
+
+pip3 install -r requirements.txt # 据依赖清单批量安装包
 
 pip download -r requirements.txt -d ./offline_packages # 将依赖离线至本地
 
 python -m pip install --no-index --no-deps path/to/wheelhouse/*.whl # 从本地安装依赖
+```
+
+### 虚拟环境管理
+
+```bash
+# 创建虚拟环境
+python3 -m venv myenv
+
+# 激活虚拟环境
+source myenv/bin/activate
+
+# 在虚拟环境中安装依赖
+pip install -r requirements.txt
+
+# 退出虚拟环境
+deactivate
 ```
 
 ## 基础语法
