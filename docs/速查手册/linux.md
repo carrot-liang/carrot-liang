@@ -65,6 +65,32 @@ du -sh filename      # 显示文件/目录大小
 df -h                # 显示磁盘使用情况
 ```
 
+### 链接操作
+```bash
+# 创建硬链接
+ln target link       # 创建硬链接（指向同一inode）
+ln file1 file2       # 为file1创建硬链接file2
+
+# 创建符号链接（软链接）
+ln -s target link    # 创建符号链接
+ln -s /path/to/file link  # 创建指向绝对路径的符号链接
+ln -s ../file link   # 创建指向相对路径的符号链接
+
+# 强制创建链接
+ln -f target link    # 强制创建链接（覆盖已存在的链接）
+ln -sf target link   # 强制创建符号链接（覆盖已存在的链接）
+ln -snf target link  # 强制创建符号链接（不跟踪目录链接）
+
+# 链接管理
+ls -la | grep "^l"  # 查看当前目录下的所有符号链接
+readlink link        # 显示符号链接指向的目标
+ls -l link          # 查看链接的详细信息
+
+# 删除链接
+rm link             # 删除符号链接（不会删除原文件）
+unlink link         # 删除链接的另一种方式
+```
+
 ## 🔧 系统管理
 
 ### 系统信息
@@ -183,7 +209,20 @@ rsync -av source dest     # 同步文件
 # 网络服务
 ssh user@host        # SSH连接
 ssh-keygen           # 生成SSH密钥
+ssh-keygen  -lf id_rsa.pub # 生成ssh公钥的SHA256指纹
 ssh-copy-id user@host # 复制SSH密钥到远程主机
+```
+
+
+ssh-add 向认证代理 ssh-agent(1) 添加私钥身份。当不带参数运行时，它将添加文件 ~/.ssh/id_rsa、~/.ssh/id_dsa、~/ssh/id_ecdsa、~/.ssh/id_ecdsa_sk、~/.ssh/id_ed25519 和 ~/.ssh/id_ed25519_sk。加载私钥后
+ ，ssh-add 将尝试加载相应的证书，通过向私钥文件的名称追加 -cert.pub 来获得的相应的证书。可选的文件名可以在命令行中给出。
+
+```bash
+ssh-add ~/.ssh/id_rsa
+Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
+
+ssh-add -l # 列出 ssh-agent 中当前所代表的所有身份的指纹。
+ssh-add -d ~/.ssh/id_rsa.pub  # 从 ssh-agent 中删除密钥。
 ```
 
 ## 📦 软件包管理
@@ -198,20 +237,4 @@ apt list --installed # 列出已安装的软件包
 
 apt-mark showmanual # 查看手动安装的软件包（非依赖）
 
-```
-## 🔑 密钥
-
-```bash
-ssh-keygen  -lf id_rsa.pub # 生成ssh公钥的SHA256指纹
-```
-
-ssh-add 向认证代理 ssh-agent(1) 添加私钥身份。当不带参数运行时，它将添加文件 ~/.ssh/id_rsa、~/.ssh/id_dsa、~/ssh/id_ecdsa、~/.ssh/id_ecdsa_sk、~/.ssh/id_ed25519 和 ~/.ssh/id_ed25519_sk。加载私钥后
- ，ssh-add 将尝试加载相应的证书，通过向私钥文件的名称追加 -cert.pub 来获得的相应的证书。可选的文件名可以在命令行中给出。
-
-```bash
-ssh-add ~/.ssh/id_rsa
-Identity added: /root/.ssh/id_rsa (/root/.ssh/id_rsa)
-
-ssh-add -l # 列出 ssh-agent 中当前所代表的所有身份的指纹。
-ssh-add -d ~/.ssh/id_rsa.pub  # 从 ssh-agent 中删除密钥。
 ```
