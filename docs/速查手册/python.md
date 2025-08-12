@@ -22,7 +22,7 @@ pip3 install -r requirements.txt # 据依赖清单批量安装包
 
 pip download -r requirements.txt -d ./offline_packages # 将依赖离线至本地
 
-python -m pip install --no-index --no-deps path/to/wheelhouse/*.whl # 从本地安装依赖
+python -m pip install --no-index --no-deps ./offline_packages/*.whl # 从本地安装依赖
 ```
 
 ### 虚拟环境管理
