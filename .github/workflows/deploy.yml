@@ -1,7 +1,10 @@
-name: CI
+name: deploy
 on:
   push:
-    branches: [ "main" ]
+     branches:
+      - 'main'
+     paths:
+      - 'docs/**'
   workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel

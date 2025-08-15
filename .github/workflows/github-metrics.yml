@@ -1,0 +1,19 @@
+name: github-metrics
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+  schedule: [{cron: "0 0 * * *"}]
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_pagespeed: yes
+          plugin_pagespeed_url: https://growcarrot.tech
+          plugin_languages: yes
