@@ -18,6 +18,8 @@ jobs:
           config_timezone: Asia/Shanghai
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
+          base_indepth: yes
+          plugin_traffic: yes
           plugin_lines: yes
           plugin_pagespeed: yes
           plugin_pagespeed_url: https://growcarrot.tech
@@ -32,3 +34,5 @@ jobs:
             h2 {
               color: orange;
             }
+          extras_js: |
+            document.querySelectorAll("h1")?.forEach(item => item.remove())
