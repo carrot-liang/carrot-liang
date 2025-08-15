@@ -17,12 +17,16 @@ jobs:
         with:
           config_timezone: Asia/Shanghai
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header
+          base: header, repositories
+          plugin_lines: yes
           plugin_pagespeed: yes
           plugin_pagespeed_url: https://growcarrot.tech
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_languages: yes
-          config_order: base.header, languages, pagespeed
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: X
+          config_order: base.header, base.repositories, languages, achievements, pagespeed
           config_display: large
           extras_css: |
             h2 {
