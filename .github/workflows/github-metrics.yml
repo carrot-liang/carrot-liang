@@ -2,6 +2,9 @@ name: github-metrics
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/github-metrics.yml'
   workflow_dispatch:
   schedule: [{cron: "0 0 * * *"}]
 jobs:
@@ -12,8 +15,15 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          config_timezone: Asia/Shanghai
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: header
           plugin_pagespeed: yes
           plugin_pagespeed_url: https://growcarrot.tech
           plugin_languages: yes
+          config_order: base.header, languages, pagespeed
+          config_display: large
+          extras_css: |
+            h2 {
+              color: orange;
+            }
