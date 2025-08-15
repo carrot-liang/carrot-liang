@@ -20,6 +20,7 @@ jobs:
           base: header
           plugin_pagespeed: yes
           plugin_pagespeed_url: https://growcarrot.tech
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_languages: yes
           config_order: base.header, languages, pagespeed
           config_display: large
