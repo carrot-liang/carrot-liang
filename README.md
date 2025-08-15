@@ -1,5 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=CARROT Liang&section=header&textBg=false&fontAlignY=34&desc=">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&text=CARROT LIANG&section=header&textBg=false&fontAlignY=34&desc=" alt="Hello" width="100%">
 
 <img src="/github-metrics.svg" alt="Metrics" width="100%">
 
