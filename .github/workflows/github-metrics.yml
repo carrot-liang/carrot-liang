@@ -18,7 +18,6 @@ jobs:
           config_timezone: Asia/Shanghai
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
-          base_indepth: yes
           plugin_traffic: yes
           plugin_lines: yes
           plugin_pagespeed: yes
