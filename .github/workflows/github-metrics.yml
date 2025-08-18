@@ -21,7 +21,7 @@ jobs:
           plugin_traffic: yes
           plugin_lines: yes
           plugin_pagespeed: yes
-          plugin_pagespeed_url: https://growcarrot.tech
+          plugin_pagespeed_url: https://www.growcarrot.tech
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_languages: yes
           config_order: base.header, base.repositories, languages, pagespeed
