@@ -40,9 +40,7 @@ URL-REGEX,^https?://ads-.*\.xhscdn.com.+,REJECT
 URL-REGEX,^https?://growth-img.xhscdn.com.+,REJECT
 URL-REGEX,^https?://sns-webpic.xhscdn.com.+,REJECT
 URL-REGEX,^https?://xhslive-video.xhscnd.com.+,REJECT
-URL-REGEX,^https?://.*\.xiaohongshu.com.+,REJECT
-URL-REGEX,^https?://.*\.redbascket.com.+,REJECT
 
 # MITM 中应包含Rule中定义的所有域名
 [MITM]
-hostname = %APPEND% ad.12306.cn, *.cyapi.cn, cnlogs.umeng.com, cnlogs.umengcloud.com, bootpreload.uve.weibo.com, m5-x.amap.com, dns.alidns.com, doh.pub, *.xhscdn.com, *.xiaohongshu.com, *.redbascket.com
+hostname = %APPEND% ad.12306.cn, *.cyapi.cn, cnlogs.umeng.com, cnlogs.umengcloud.com, bootpreload.uve.weibo.com, m5-x.amap.com, dns.alidns.com, doh.pub, *.xhscdn.com
