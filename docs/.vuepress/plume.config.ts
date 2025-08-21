@@ -29,7 +29,7 @@ export default defineThemeConfig({
 
   /* 站点页脚 */
   footer: {
-    message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration-line:none;margin-right: 20px;">京ICP备2025119193号</a><a style="text-decoration-line:none" href="https://beian.mps.gov.cn/#/query/webSearch?code=11010102000001" target="_blank"><img src="/img/ga-logo.png" style="width:16px;display:inline-block;vertical-align:text-top">&nbsp;京公网安备11011402054588号 </a>',
+    message: '<a href="https://beian.miit.gov.cn/" target="_blank" style="text-decoration-line:none;margin-right: 20px;">京ICP备2025119193号</a><a style="text-decoration-line:none" href="https://beian.mps.gov.cn/#/query/webSearch?code=11011402054588" target="_blank"><img src="/img/ga-logo.png" style="width:16px;display:inline-block;vertical-align:text-top">&nbsp;京公网安备11011402054588号 </a>',
     copyright: '',
   },
 
