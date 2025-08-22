@@ -1,6 +1,7 @@
 ---
 title: Node 命令速查
 createTime: 2025/08/13
+permalink: /blog/fx8yl1r5/
 ---
 
 

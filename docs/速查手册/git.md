@@ -1,6 +1,7 @@
 ---
 title: Git 命令速查
 createTime: 2025/08/01
+permalink: /blog/m2j8f8me/
 ---
 
 ## 新建代码库

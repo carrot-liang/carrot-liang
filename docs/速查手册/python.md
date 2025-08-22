@@ -1,5 +1,7 @@
 ---
 title: Python 速查手册
+createTime: 2025/08/18 09:40:24
+permalink: /blog/56wtkezd/
 ---
 
 ## 配置
