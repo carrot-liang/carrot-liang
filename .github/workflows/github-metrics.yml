@@ -1,0 +1,33 @@
+name: github-metrics
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - '.github/workflows/github-metrics.yml'
+  workflow_dispatch:
+  schedule: [{cron: "0 12 * * 1"}]
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          config_timezone: Asia/Shanghai
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
+          plugin_traffic: yes
+          plugin_lines: yes
+          plugin_pagespeed: yes
+          plugin_pagespeed_url: https://www.growcarrot.tech
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
+          plugin_languages: yes
+          config_order: base.header, base.repositories, languages, pagespeed
+          config_display: large
+          extras_css: |
+            h2 {
+              color: orange;
+            }
+          extras_js: |
+            document.querySelectorAll("h1")?.forEach(item => item.remove())
