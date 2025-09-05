@@ -20,4 +20,3 @@ feedback@growcarrot.tech
 ### 社交媒体 / Social Media
 
 - [微信公众号 / WeChat Official Account](#)
-- [微博 / Weibo](#)
