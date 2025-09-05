@@ -21,4 +21,3 @@ feedback@growcarrot.tech
 
 - [微信公众号 / WeChat Official Account](#)
 - [微博 / Weibo](#)
-- [LinkedIn](#)
