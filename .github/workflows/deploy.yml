@@ -26,9 +26,9 @@ jobs:
       - run: pnpm install
       - run: pnpm docs:build
       - run: ls -al ./docs/.vuepress/dist
-      - uses: stefanzweifel/git-auto-commit-action@v6
-        with:
-          commit_message: Update docs
+      # - uses: stefanzweifel/git-auto-commit-action@v6
+      #   with:
+      #     commit_message: Update docs
       - uses: easingthemes/ssh-deploy@main
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}

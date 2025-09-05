@@ -1,3 +1,0 @@
-Sitemap: https://wwww.growcarrot.tech/sitemap.xml
-User-agent:*
-Disallow:
