@@ -24,7 +24,7 @@ jobs:
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_languages: yes
           plugin_calendar: yes
-          config_order: base.header, base.repositories, languages, pagespeed
+          config_order: base.header, base.repositories, languages, pagespeed, calendar
           config_display: large
           extras_css: |
             h2 {
