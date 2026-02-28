@@ -5,7 +5,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: 'Carrot Tech',
+  title: 'CarroTech',
   description: '',
 
   head: [
