@@ -3,4 +3,4 @@
 
 <img src="/github-metrics.svg" alt="Metrics" width="100%">
 
-[![CI](https://github.com/growcarrot/growcarrot-web/actions/workflows/deploy.yml/badge.svg)](https://github.com/growcarrot/growcarrot-web/actions/workflows/deploy.yml)
+[![CI](https://github.com/carrot-liang/carrot-liang/actions/workflows/deploy.yml/badge.svg)](https://github.com/carrot-liang/carrot-liang/actions/workflows/deploy.yml)

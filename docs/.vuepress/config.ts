@@ -5,7 +5,7 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: 'Grow Carrot Tech',
+  title: 'Carrot Tech',
   description: '',
 
   head: [
@@ -18,7 +18,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-     hostname: 'https://wwww.growcarrot.tech',
+     hostname: 'https://wwww.carrotech.cn',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',

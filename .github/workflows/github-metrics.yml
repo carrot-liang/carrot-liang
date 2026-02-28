@@ -20,7 +20,7 @@ jobs:
           plugin_traffic: yes
           plugin_lines: yes
           plugin_pagespeed: yes
-          plugin_pagespeed_url: https://www.growcarrot.tech
+          plugin_pagespeed_url: https://www.carrotech.cn
           plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_languages: yes
           plugin_calendar: yes
